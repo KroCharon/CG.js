@@ -46,11 +46,11 @@ function fancyLineBreak() {
 
 function playerTurnMsg() {
   fancyLineBreak();
-  console.log("Player turn: would you like to hit [1] <-OR-> stay [2]");
+  console.log("Player turn: would you like to hit [1] <-OR-> stand [2]");
 }
 
 function dealerTurnMsg() {
-  console.log("Dealer turn: would you like to hit [1] <or> stay [2]");
+  console.log("Dealer turn: would you like to hit [1] <or> stand [2]");
 }
 
 function bust() {
@@ -214,7 +214,7 @@ function blackJack() {
 
   while (keepPlay) {
     playerTurnMsg();
-    stat = prompt("| HIT [1] | STAY [2] | : ");
+    stat = prompt("| HIT [1] | STAND [2] | : ");
     if (stat == 1) {
       fancyLineBreak();
       console.log("Player has chosen to [HIT]");
@@ -235,7 +235,7 @@ function blackJack() {
     } else if (stat == 2) {
       fancyLineBreak();
       keepPlay = false;
-      console.log("Player has chosen to [STAY]");
+      console.log("Player has chosen to [STAND]");
       console.log("Player holds: [ " + userCards + " ]"); // Can be put into a function for both Player and Dealer.
       console.log("Value totals: " + "< " + userTotal + " >");
     }
@@ -252,6 +252,7 @@ function blackJack() {
       // Condition does not need to account for over 21 since first hand held at time of executing.
       console.log("The Dealer chooses to [STAND]");
       compareHand(userTotal, dealerTotal);
+      fancyLineBreak();
       gameOngoing = false;
     } else if (dealerTotal < 17) {
       console.log("The Dealer chooses to [HIT]");
@@ -266,6 +267,8 @@ function blackJack() {
 
       if (addTotal(dealerCards) > 21) {
         bust();
+        fancyLineBreak();
+        console.log("<<< PLAYER WINS! >>>");
         gameOngoing = false;
       }
     }
