@@ -75,26 +75,6 @@ function dealerInfo(arr) {
   return dI;
 }
 
-function notCompleteConclusion(val1, val2) {
-  let v1 = addTotal(val1);
-  let v2 = addTotal(val2);
-
-  if (v1 > v2) {
-    fancyLineBreak();
-    console.log("Player wins!");
-    fancyLineBreak();
-  } else if (v2 > v1) {
-    fancyLineBreak();
-    console.log("Dealer wins!");
-    fancyLineBreak();
-  } else if ((v1 = v2)) {
-    fancyLineBreak();
-    console.log("    DRAW!");
-    fancyLineBreak();
-  }
-  //notCompleteConclusion(userCards, dealerCards);
-}
-
 function drawACard() {
   let preCard = getRandomInteger(14); // 14, 1 for Ace testing
   let finalCard;
