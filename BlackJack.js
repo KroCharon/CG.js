@@ -69,8 +69,8 @@ function playerInfo(arr) {
 function dealerInfo(arr) {
   let dI = addTotal(arr);
   fancyLineBreak();
-  console.log("Dealer drew: [ " + arr[0] + " [?]" + " ]");
-  fancyLineBreak();
+  console.log("Dealer drew: [ " + arr[0] + ", {?}" + " ]");
+  //fancyLineBreak();
   //console.log("Dealer's hand totals: " + "< " + dI + " >");
   return dI;
 }
