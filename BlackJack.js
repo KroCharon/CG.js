@@ -144,7 +144,7 @@ function compareHand(arr1, arr2) {
   if (arr1 > arr2) {
     console.log("<<< PLAYER WINS! >>>");
   } else if (arr2 > arr1) {
-    console.log("<<< DEALER WINS! >>>!");
+    console.log("<<< DEALER WINS! >>>");
   } else if (arr1 == arr2) {
     console.log("<<< PUSH >>>");
   }
