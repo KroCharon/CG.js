@@ -37,16 +37,16 @@ function aceCheck(arr) {
 }
 
 function lineBreak() {
-  console.log("- - - - - - - - - - - - -");
+  console.log("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 }
 
 function fancyLineBreak() {
-  console.log(`~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~`);
+  console.log(`~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~`);
 }
 
 function playerTurnMsg() {
   fancyLineBreak();
-  console.log("Player turn: would you like to hit [1] <or> stay [2]");
+  console.log("Player turn: would you like to hit [1] <-OR-> stay [2]");
 }
 
 function dealerTurnMsg() {
@@ -210,11 +210,11 @@ function blackJack() {
     keepPlay = false;
   }
 
-  fancyLineBreak();
+  //fancyLineBreak();
 
   while (keepPlay) {
     playerTurnMsg();
-    stat = prompt("HIT [1] | STAY [2] : ");
+    stat = prompt("| HIT [1] | STAY [2] | : ");
     if (stat == 1) {
       fancyLineBreak();
       console.log("Player has chosen to [HIT]");
