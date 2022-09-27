@@ -89,6 +89,7 @@ function drawACard() {
 }
 
 function addTotal(arr) {
+  // There is a problem with some "Ace" cases. Requires more debugging.
   let total = 0;
   let ac = 0;
 
