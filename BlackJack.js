@@ -142,11 +142,11 @@ function dealTable(array1, array2) {
 
 function compareHand(arr1, arr2) {
   if (arr1 > arr2) {
-    console.log("<<<PLAYER WINS!>>>");
+    console.log("<<< PLAYER WINS! >>>");
   } else if (arr2 > arr1) {
-    console.log("<<<DEALER WINS!>>>!");
+    console.log("<<< DEALER WINS! >>>!");
   } else if (arr1 == arr2) {
-    console.log("<<<PUSH>>>");
+    console.log("<<< PUSH >>>");
   }
 }
 
@@ -224,13 +224,13 @@ function blackJack() {
       if (temp == 21) {
         keepPlay = false;
         gameOngoing = false;
-        console.log("<<<BLACKJACK! PLAYER WINS!>>>");
+        console.log("<<< BLACKJACK! PLAYER WINS! >>>");
       }
       if (temp > 21) {
         keepPlay = false;
         gameOngoing = false;
         bust();
-        console.log("<<<DEALER WINS!>>>");
+        console.log("<<< DEALER WINS! >>>");
       }
     } else if (stat == 2) {
       fancyLineBreak();
