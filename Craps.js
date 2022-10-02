@@ -50,6 +50,7 @@ function crapsSimulation() {
     }
   }
 }
+// ^^
 crapsSimulation();
 
 //                Task 2:
